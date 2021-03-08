@@ -19,7 +19,7 @@ JSBotClient.on("message", (message) => {
             .catch(console.error)
             return;
         } else {
-            fetch(`http://api.openweathermap.org/data/2.5/weather?zip=${zipCode},US&appid=2783022f774b889fe43211fe74b13dc4`)
+            fetch(`http://api.openweathermap.org/data/2.5/weather?zip=${zipCode},US&appid=`)
                 .then(response => {
                     return response.json()
                 })
@@ -41,5 +41,6 @@ JSBotClient.on("message", (message) => {
     }
 })
 
-JSBotClient.login('ODE4NTE4MzU5OTIyNDQyMjYx.YEZOoA.abBtAk34xVnXnFo6b8g_CsRAWjk')
+//Bot Token and API Token are removed for privacy reasons. 
+JSBotClient.login('')
 
